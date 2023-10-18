@@ -1,0 +1,55 @@
+ul.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+ul.timeline li {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 30px;
+    line-height: 1.6;
+}
+
+ul.timeline li::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+    background: #3b82f6;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+ul.timeline li::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    width: 1px;
+    height: calc(100% + 20px);
+    background: #3b82f6;
+    z-index: 1;
+}
+
+ul.timeline li a {
+    display: block;
+    font-weight: bold;
+    z-index: 2;
+}
+
+ul.timeline li small {
+    font-weight: normal;
+}
+
+ul.timeline li p {
+    margin-top: 10px;
+}
+
+ul.timeline li .float-right {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 2;
+}
