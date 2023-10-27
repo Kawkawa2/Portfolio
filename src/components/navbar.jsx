@@ -1,5 +1,5 @@
-import React from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -31,9 +31,9 @@ export default function Navbar() {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M1 1h15M1 7h15M1 13h15"
                   />
                 </svg>
@@ -47,37 +47,40 @@ export default function Navbar() {
           >
             <ul className="flex flex-col font-medium  mt-4  md:flex-row md:space-x-8 md:mt-0  md:shadow-none shadow-xl  rounded-lg md:rounded-none bg-white overflow-hidden md:bg-transparent ">
               <li className="md:bg-transparent md:hover:bg-none hover:bg-gradient-to-br from-red-100 via-red-200 to-yellow-100">
-                <a
-                  href="/"
+                <Link
+                  to="/"
+                  aria-label="Go to home Page"
                   className="block py-2 pl-3 pr-4 text-blackrounded md:bg-transparent md  md:p-0  lg:hover:border-b-2 lg:hover:border-slate-900 md:border-b-0 border-b-2 border-opacity-5 border-b-black link"
-                  aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="md:bg-transparent  md:hover:bg-none  hover:bg-gradient-to-br from-red-100 via-red-200 to-yellow-100">
-                <a
-                  href="/about"
+                <Link
+                  to="/about"
+                  aria-label="Go to about Page"
                   className="block py-2 pl-3 pr-4 text-blackrounded md:bg-transparent md md:p-0 lg:hover:border-b-2 lg:hover:border-slate-900 md:border-b-0 border-b-2 border-opacity-5 border-b-black link"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li className="md:bg-transparent  md:hover:bg-none  hover:bg-gradient-to-br from-red-100 via-red-200 to-yellow-100">
-                <a
-                  href="/projects"
+                <Link
+                  to="/projects"
+                  aria-label="Go to Projects Page"
                   className="block py-2 pl-3 pr-4 text-blackrounded md:bg-transparent md md:p-0 lg:hover:border-b-2 lg:hover:border-slate-900 md:border-b-0 border-b-2 border-opacity-5 border-b-black"
                 >
                   Projects
-                </a>
+                </Link>
               </li>
               <li className="md:bg-transparent md:hover:bg-none  hover:bg-gradient-to-br from-red-100 via-red-200 to-yellow-100">
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
+                  aria-label="Go to Contacy Page"
                   className="block py-2 pl-3 pr-4 text-blackrounded md:bg-transparent md md:p-0 lg:hover:border-b-2 lg:hover:border-slate-900"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

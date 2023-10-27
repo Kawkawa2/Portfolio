@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import Gotolink from "./gotolink";
 
@@ -19,17 +18,8 @@ function Resume() {
               aria-label="Go to Contact Page"
               className="relative border-none font-extrabold text-black  leading-5 hover:underline hover:text-blue-700"
             >
-              Contact page
-            </Link>{" "}
-            or{" "}
-            <Link
-              to="/resume"
-              aria-label="download resume"
-              className="relative border-none font-extrabold text-black  leading-4 hover:underline hover:text-blue-700"
-            >
-              Download
-            </Link>{" "}
-            the resume.{" "}
+              Contact page.
+            </Link>
           </p>
         </article>
         <div
@@ -59,11 +49,12 @@ function Resume() {
               padding: 0,
               margin: 0,
             }}
-            src="https://www.canva.com/design/DAFsUd94XBQ/view?embed"
+            src="https://www.canva.com/design/DAFydtYK0Rs/view?embed"
             allowFullScreen
             allow="fullscreen"
           ></iframe>
         </div>
+
         <Gotolink
           content={"Are you now persuaded to get in touch with me?"}
           linkpath={"/contact"}

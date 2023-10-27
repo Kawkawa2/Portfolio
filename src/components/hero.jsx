@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 import { motion } from "framer-motion";
@@ -40,18 +39,8 @@ function Hero() {
           While coding is my area of expertise, I also like outdoor adventures
           and indoor coding marathons for the right balance of work and play. I
           love minimalism and find elegance in simplicity and structure, which I
-          incorporate into every project I work on. When I&apos;m not buried in
-          code, you can find me reading informative{" "}
-          <Link
-            to="/articles"
-            aria-label="Go to Articles Page And Check What I Read"
-            className="relative border-none font-extrabold text-black text-base uppercase leading-5 hover:text-blue-700 hover:underline "
-          >
-            Articles
-          </Link>{" "}
-          or swaying to the beautiful rhythms of Pop Music & Jazz, finding
-          inspiration in melodies.{" "}
-        </p>
+          incorporate into every project I work on.
+        </p>{" "}
         <p className="mb-1 font-normal text-gray-700 text-base leading-loose">
           Feel free to explore my latest{" "}
           <Link
@@ -76,7 +65,7 @@ function Hero() {
           page. Let&apos;s join forces and create something extraordinary
           together!{" "}
         </p>
-        <Gotolink content={"See More About Me."} linkpath={'/about'}/>
+        <Gotolink content={"See More About Me."} linkpath={"/about"} />
       </div>
     </section>
   );

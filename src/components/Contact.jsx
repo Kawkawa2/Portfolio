@@ -1,4 +1,3 @@
-import React from "react";
 import Gotolink from "./gotolink";
 
 function Contact() {
@@ -12,7 +11,7 @@ function Contact() {
         </a>
         <article>
           <p className=" text-sm">
-          Don't hesitate to reach out to me or drop an email anytime{" "}
+            Don{"'"}t hesitate to reach out to me or drop an email anytime{" "}
           </p>
         </article>
         <form className="py-5">
@@ -27,7 +26,7 @@ function Contact() {
               required
             />
             <label
-              for="floating_name"
+              htmlFor="floating_name"
               className="peer-focus:font-bold absolute text-md text-gray-800  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 capitalize"
             >
               Name
@@ -44,7 +43,7 @@ function Contact() {
               required
             />
             <label
-              for="floating_email"
+              htmlFor="floating_email"
               className="peer-focus:font-bold absolute text-md text-gray-800  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 capitalize"
             >
               Email address
@@ -62,7 +61,7 @@ function Contact() {
               required
             />
             <label
-              for="floating_message"
+              htmlFor="floating_message"
               className="peer-focus:font-bold absolute text-md text-gray-800  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 capitalize"
             >
               message
@@ -70,7 +69,7 @@ function Contact() {
           </div>
           <button
             type="button"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-md px-5 py-3  mb-2 capitalize"
+            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-md px-5 py-3  mb-2 capitalize"
           >
             send message
           </button>

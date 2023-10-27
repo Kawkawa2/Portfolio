@@ -1,11 +1,12 @@
-import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function Gotolink(props) {
   return (
     <div>
-      <a
-        href={props.linkpath}
+      <Link
+        to={props.linkpath}
+        aria-label="Go to  Page"
         className="inline-flex items-center mt-3 font-semibold text-gray-700 text-base leading-5 hover:underline hover:text-blue-700"
       >
         {props.content}
@@ -32,7 +33,7 @@ function Gotolink(props) {
             />
           </motion.svg>
         </div>
-      </a>{" "}
+      </Link>{" "}
     </div>
   );
 }
