@@ -7,7 +7,7 @@ function Gotolink(props) {
       <Link
         to={props.linkpath}
         aria-label="Go to  Page"
-        className="inline-flex items-center mt-3 font-semibold text-gray-700 text-base leading-5 hover:underline hover:text-blue-700"
+        className="inline-flex items-center mt-10 font-semibold text-gray-700 text-base leading-5 hover:underline hover:text-blue-700 "
       >
         {props.content}
         <div className="ml-2.5 flex items-center">

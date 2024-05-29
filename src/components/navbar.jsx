@@ -16,7 +16,7 @@ export default function Navbar() {
             <button
               data-collapse-toggle="navbar-cta"
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm  rounded-lg md:hidden group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200  focus:outline-none"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm  rounded-lg md:hidden text-gray-500 hover:bg-gray-100  focus:outline-none"
               aria-controls="navbar-cta"
               aria-expanded="false"
             >
@@ -46,7 +46,7 @@ export default function Navbar() {
             id="navbar-cta"
           >
             <ul className="flex flex-col font-medium  mt-4  md:flex-row md:space-x-8 md:mt-0  md:shadow-none shadow-xl  rounded-lg md:rounded-none bg-white overflow-hidden md:bg-transparent ">
-              <li className="md:bg-transparent md:hover:bg-none hover:bg-gradient-to-br from-red-100 via-red-200 to-yellow-100">
+              <li className="md:bg-transparent md:hover:bg-none hover:bg-gray-100">
                 <Link
                   to="/"
                   aria-label="Go to home Page"
@@ -55,7 +55,7 @@ export default function Navbar() {
                   Home
                 </Link>
               </li>
-              <li className="md:bg-transparent  md:hover:bg-none  hover:bg-gradient-to-br from-red-100 via-red-200 to-yellow-100">
+              <li className="md:bg-transparent  md:hover:bg-none  hover:bg-gray-100">
                 <Link
                   to="/about"
                   aria-label="Go to about Page"
@@ -64,7 +64,7 @@ export default function Navbar() {
                   About
                 </Link>
               </li>
-              <li className="md:bg-transparent  md:hover:bg-none  hover:bg-gradient-to-br from-red-100 via-red-200 to-yellow-100">
+              <li className="md:bg-transparent  md:hover:bg-none  hover:bg-gray-100">
                 <Link
                   to="/projects"
                   aria-label="Go to Projects Page"
@@ -73,7 +73,7 @@ export default function Navbar() {
                   Projects
                 </Link>
               </li>
-              <li className="md:bg-transparent md:hover:bg-none  hover:bg-gradient-to-br from-red-100 via-red-200 to-yellow-100">
+              <li className="md:bg-transparent md:hover:bg-none  hover:bg-gray-100">
                 <Link
                   to="/contact"
                   aria-label="Go to Contacy Page"
@@ -86,11 +86,6 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      {/* <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 focus:ring-4 focus:outline-none ">
-              <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white  rounded-md group-hover:bg-opacity-0">
-                Hire me
-              </span>
-            </button> */}
     </div>
   );
 }

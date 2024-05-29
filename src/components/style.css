@@ -1,16 +1,19 @@
+*{
+  cursor: none;
+}
 ul.timeline {
     list-style: none;
     padding: 0;
-}
-
-ul.timeline li {
+  }
+  
+  ul.timeline li {
     position: relative;
     margin: 20px 0;
     padding-left: 30px;
     line-height: 1.6;
-}
-
-ul.timeline li::before {
+  }
+  
+  ul.timeline li::before {
     content: '';
     position: absolute;
     top: 5px;
@@ -20,9 +23,9 @@ ul.timeline li::before {
     background: #3b82f6;
     border-radius: 50%;
     z-index: 1;
-}
-
-ul.timeline li::after {
+  }
+  
+  ul.timeline li::after {
     content: '';
     position: absolute;
     top: 5px;
@@ -31,25 +34,54 @@ ul.timeline li::after {
     height: calc(100% + 20px);
     background: #3b82f6;
     z-index: 1;
-}
-
-ul.timeline li a {
-    display: block;
+  }
+  
+  ul.timeline li a {
     font-weight: bold;
     z-index: 2;
-}
-
-ul.timeline li small {
+    margin-right: 10px; /* Optional: To add some spacing between the links */
+  }
+  
+  ul.timeline li small {
     font-weight: normal;
-}
-
-ul.timeline li p {
+  }
+  
+  ul.timeline li p {
     margin-top: 10px;
+  }
+  
+  ul.timeline li .float-right {
+    margin-left: auto; /* Push the date to the right in flexbox */
+    z-index: 2;
+  }
+  
+  /* Adding responsive behavior */
+  @media (max-width: 768px) {
+    ul.timeline li .float-right {
+      margin-left: 0;
+      margin-top: 5px; /* Optional: Add spacing on small screens */
+    }
+}
+/* adding css for cursor */
+.cursor {
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1000;
+  /* transition: top 0.2s ease, left 0.1s ease; Smooth movement */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-ul.timeline li .float-right {
-    position: absolute;
-    top: 0;
-    right: 20px;
-    z-index: 2;
+.emoji {
+  font-size: 1rem; /* Adjust size as needed */
 }
+
+
+
+

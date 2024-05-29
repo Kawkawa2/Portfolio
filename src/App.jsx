@@ -2,7 +2,6 @@ import React, { useRef, useEffect } from "react";
 import "./index.css"; // Make sure to import your custom CSS file
 import styled from "styled-components";
 import Navbar from "./components/navbar";
-import Footer from "./components/footer";
 import Hero from "./components/hero";
 import About from "./components/about";
 import Projects from "./components/projects";
@@ -42,7 +41,7 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/resume" element={<Resume />} />
           </Routes>
-          <Footer />
+          
         </Main>
       </motion.div>
     </div>
