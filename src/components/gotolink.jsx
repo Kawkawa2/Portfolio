@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import Footer from "./footer";
 
 function Gotolink(props) {
   return (
@@ -34,6 +35,7 @@ function Gotolink(props) {
           </motion.svg>
         </div>
       </Link>{" "}
+      <Footer/>
     </div>
   );
 }

@@ -427,6 +427,7 @@ function Projects() {
           </div>
         )}
         <Gotolink content={"Lets Go To My Resume."} linkpath={"/resume"} />
+        
       </div>
     </section>
   );

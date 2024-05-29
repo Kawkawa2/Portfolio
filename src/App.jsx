@@ -6,6 +6,7 @@ import Hero from "./components/hero";
 import About from "./components/about";
 import Projects from "./components/projects";
 import Contact from "./components/Contact";
+import ContactMessage from './components/contactMessage.jsx'
 import { Route, Routes } from "react-router-dom";
 import { motion, useAnimation, useInView } from "framer-motion";
 import Resume from "./components/Resume";
@@ -32,7 +33,7 @@ const App = () => {
         animate={mainControl}
         transition={{ duration: 0.5, delay: 0.25 }}
       >
-        <Main className="[&>*]:max-w-7xl [&>*]:mx-auto [&>*]:py-4 [&>*]:px-6 [&>*]:h-auto ">
+        <Main className="[&>*]:max-w-7xl [&>*]:mx-auto [&>*]:py-4 [&>*]:px-6 [&>*]:h-auto  ">
           <Navbar />
           <Routes>
             <Route path="/" element={<Hero />} />
@@ -44,6 +45,8 @@ const App = () => {
           
         </Main>
       </motion.div>
+      <ContactMessage/>
+
     </div>
   );
 };

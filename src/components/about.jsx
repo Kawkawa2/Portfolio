@@ -1,5 +1,6 @@
 import Gotolink from "./gotolink";
 
+
 function About() {
   return (
     <section className="min-h-[calc(100vh - 40vh)] flex items-center justify-center">
@@ -267,6 +268,7 @@ function About() {
           content={"Let's Continue To Projects."}
           linkpath={"/projects"}
         />
+
       </div>
     </section>
   );

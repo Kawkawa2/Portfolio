@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <div>
       <nav className="">
-        <div className=" flex flex-wrap items-center justify-between md:mt-4">
+        <div className=" flex flex-wrap items-center justify-between md:mt-4 mb-28">
           <a href="/" className="flex items-center">
             <span className="self-center md:text-2xl text-xl font-semibold whitespace-nowrap">
               {"<Kawkawa/>"}

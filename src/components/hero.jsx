@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import { motion } from "framer-motion";
 import Gotolink from "./gotolink";
-import Footer from "./footer";
 
 
 function Hero() {
@@ -68,7 +67,7 @@ function Hero() {
           together!{" "}
         </p>
         <Gotolink content={"See More About Me."} linkpath={"/about"} />
-        <Footer/>
+    
       </div>
     </section>
   );

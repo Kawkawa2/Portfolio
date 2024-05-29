@@ -35,6 +35,7 @@ function Resume() {
           content={"Are you now persuaded to get in touch with me?"}
           linkpath={"/contact"}
         />
+        
       </div>
     </section>
   );

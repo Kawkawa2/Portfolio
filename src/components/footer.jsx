@@ -7,7 +7,7 @@ import MailIcon from "../assets/mail.svg";
 function Footer() {
   return (
     <div className="">
-      <footer className="mt-5">
+      <footer className="mt-5 mb-10">
         <div className="flex justify-start items-start space-x-2">
           {/* github link */}
           <Link
