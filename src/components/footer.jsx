@@ -31,7 +31,7 @@ function Footer() {
           </div>
           {/* linkedin link */}
           <Link
-            to="https://www.linkedin.com/in/kawtar-el-kazdir-1991b3224/"
+            to="https://www.linkedin.com/in/kawtar-el-kazdir/"
             aria-label="Visit us on Linkedin"
             data-tooltip-target="tooltip-linkedin"
             target="_blank"

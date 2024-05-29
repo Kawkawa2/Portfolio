@@ -10,7 +10,7 @@ function Projects() {
   };
   return (
     <section className=" min-h-[calc(100vh - 40vh)] flex items-center  justify-center">
-      <div className="max-w-4xl">
+      <div className="max-w-6xl">
         <a href="/projects">
           <h1 className="relative my-8 mx-0 uppercase tracking-[9.9px] text-gray-900 text-4xl font-bold">
             Projects
@@ -71,14 +71,14 @@ function Projects() {
                 to="https://github.com/Kawkawa2/Top_Travaux"
                 target="_blank"
               >
-                <figure className="group relative lg:max-w-md md:max-w-lg sm:max-w-md transition-all duration-300 cursor-pointer">
+                <figure className="group relative lg:max-w-lg md:max-w-md sm:max-w-md transition-all duration-300 ">
                   <img
                     className="rounded-lg"
                     src="/image5.jpg"
                     alt="image description"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-600 to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
                   <figcaption className="absolute px-4 text-white bottom-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <h1 className="font-bold text-xl mb-2">Craftmanship</h1>
                     <p className="text-gray-100 text-sm">
@@ -114,14 +114,14 @@ function Projects() {
                 to="https://github.com/Kawkawa2/ISGI_Absence_management"
                 target="_blank"
               >
-                <figure className="group relative lg:max-w-sm md:max-w-md sm:max-w-md transition-all duration-300 cursor-pointer">
+                <figure className="group relative lg:max-w-lg md:max-w-md sm:max-w-md transition-all duration-300">
                   <img
                     className="rounded-lg"
                     src="/dashboard.PNG"
                     alt="image description"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-600 to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
                   <figcaption className="absolute px-4 text-white bottom-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <h1 className="font-bold text-xl mb-2">
                       Absence management
@@ -175,7 +175,7 @@ function Projects() {
 
             {/* Redux */}
             <article className="">
-              <figure className=" relative w-24 transition-all duration-300 cursor-pointer">
+              <figure className=" relative w-24 transition-all duration-300 ">
                 <div className="bg-transparent p-4 rounded">
                   <i className="devicon-redux-original colored text-7xl"></i>
                 </div>
@@ -187,7 +187,7 @@ function Projects() {
 
             {/* material ui */}
             <article className="">
-              <figure className=" relative w-24 transition-all duration-300 cursor-pointer">
+              <figure className=" relative w-24 transition-all duration-300 ">
                 <div className="bg-transparent p-4 rounded">
                   <i className="devicon-materialui-plain colored text-7xl"></i>
                 </div>
@@ -199,7 +199,7 @@ function Projects() {
 
             {/* Node js */}
             <article className="">
-              <figure className="group relative w-24 transition-all duration-300 cursor-pointer">
+              <figure className="group relative w-24 transition-all duration-300 ">
                 <div className="bg-transparent p-4 rounded">
                   <i className="devicon-nodejs-plain colored text-7xl"></i>
                 </div>
@@ -211,7 +211,7 @@ function Projects() {
 
             {/* Express js */}
             <article className="">
-              <figure className="group relative w-24 transition-all duration-300 cursor-pointer">
+              <figure className="group relative w-24 transition-all duration-300 ">
                 <div className="bg-transparent p-4 rounded">
                   <i className="devicon-express-original colored text-7xl"></i>
                 </div>
@@ -223,7 +223,7 @@ function Projects() {
 
             {/*Php */}
             <article className="">
-              <figure className="group relative w-24 transition-all duration-300 cursor-pointer">
+              <figure className="group relative w-24 transition-all duration-300 ">
                 <div className="bg-transparent p-4 rounded">
                   <i className="devicon-php-plain colored text-7xl"></i>
                 </div>
@@ -235,7 +235,7 @@ function Projects() {
 
             {/* Laravel */}
             <article className="">
-              <figure className="group relative w-24 transition-all duration-300 cursor-pointer">
+              <figure className="group relative w-24 transition-all duration-300 ">
                 <div className="bg-transparent p-4 rounded">
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
@@ -250,7 +250,7 @@ function Projects() {
 
             {/* python */}
             <article className="">
-              <figure className="group relative w-24 transition-all duration-300 cursor-pointer">
+              <figure className="group relative w-24 transition-all duration-300 ">
                 <div className="bg-transparent p-4 rounded">
                   <i class="devicon-python-plain colored text-7xl"></i>
                 </div>
@@ -262,7 +262,7 @@ function Projects() {
 
             {/* Html */}
             <article className="">
-              <figure className="group relative w-24 transition-all duration-300 cursor-pointer">
+              <figure className="group relative w-24 transition-all duration-300 ">
                 <div className="bg-transparent p-4 rounded">
                   <i class="devicon-html5-plain colored text-7xl"></i>
                 </div>
@@ -274,7 +274,7 @@ function Projects() {
 
             {/* Css */}
             <article className="">
-              <figure className="group relative w-24 transition-all duration-300 cursor-pointer">
+              <figure className="group relative w-24 transition-all duration-300 ">
                 <div className="bg-transparent p-4 rounded">
                   <i class="devicon-css3-plain colored text-7xl"></i>
                 </div>
@@ -285,7 +285,7 @@ function Projects() {
             </article>
             {/* Javascript */}
             <article className="">
-              <figure className="group relative w-24 transition-all duration-300 cursor-pointer">
+              <figure className="group relative w-24 transition-all duration-300 ">
                 <div className="bg-transparent p-4 rounded">
                   <i class="devicon-javascript-plain colored text-7xl"></i>
                 </div>
@@ -297,7 +297,7 @@ function Projects() {
 
             {/* TypeScript */}
             <article className="">
-              <figure className="group relative w-24 transition-all duration-300 cursor-pointer">
+              <figure className="group relative w-24 transition-all duration-300 ">
                 <div className="bg-transparent p-4 rounded">
                   <i class="devicon-typescript-plain colored text-7xl"></i>
                 </div>
@@ -309,7 +309,7 @@ function Projects() {
 
             {/* Jquery */}
             <article className="">
-              <figure className="group relative w-24 transition-all duration-300 cursor-pointer">
+              <figure className="group relative w-24 transition-all duration-300 ">
                 <div className="bg-transparent p-4 rounded">
                   <i class="devicon-jquery-plain colored text-7xl"></i>
                 </div>
@@ -321,7 +321,7 @@ function Projects() {
 
             {/* bootstrap*/}
             <article className="">
-              <figure className="group relative w-24 transition-all duration-300 cursor-pointer">
+              <figure className="group relative w-24 transition-all duration-300 ">
                 <div className="bg-transparent p-4 rounded">
                   <i class="devicon-bootstrap-plain colored text-7xl"></i>
                 </div>
@@ -333,7 +333,7 @@ function Projects() {
 
             {/* Tailwind */}
             <article className="">
-              <figure className="group relative w-24 transition-all duration-300 cursor-pointer">
+              <figure className="group relative w-24 transition-all duration-300 ">
                 <div className="bg-transparent p-4 rounded">
                   <i class="devicon-tailwindcss-plain colored text-7xl"></i>
                 </div>
@@ -344,7 +344,7 @@ function Projects() {
             </article>
             {/* Mysql */}
             <article className="">
-              <figure className="group relative w-24 transition-all duration-300 cursor-pointer">
+              <figure className="group relative w-24 transition-all duration-300 ">
                 <div className="bg-transparent p-4 rounded">
                   <i class="devicon-mysql-plain colored text-7xl"></i>
                 </div>
@@ -356,7 +356,7 @@ function Projects() {
 
             {/* Mongo DB */}
             <article className="">
-              <figure className="group relative w-24 transition-all duration-300 cursor-pointer">
+              <figure className="group relative w-24 transition-all duration-300 ">
                 <div className="bg-transparent p-4 rounded">
                   <i class="devicon-mongodb-plain colored text-7xl"></i>
                 </div>
@@ -373,7 +373,7 @@ function Projects() {
           <div className={`flex flex-wrap gap-5 items-center`} id="designs">
             {/* article 1 */}
             <article className="">
-              <figure className="group relative lg:max-w-md md:max-w-lg sm:max-w-md transition-all duration-300 cursor-pointer">
+              <figure className="group relative lg:max-w-lg md:max-w-md sm:max-w-md transition-all duration-300 ">
                 <a href="#">
                   <img
                     className="rounded-lg"
@@ -381,10 +381,10 @@ function Projects() {
                     alt="image description"
                   />
                 </a>
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-600 to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
                 <figcaption className="absolute px-4 text-white bottom-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <h1 className="font-bold text-xl mb-2">ISGI UX-UI DESIGN</h1>
-                  <p className="text-gray-200 text-sm">
+                  <p className="text-white text-sm">
                     Revamped ISGI Institute{"'"}s UX/UI for enhanced user
                     experiences. Modern, intuitive, and engaging design.
                   </p>
@@ -399,7 +399,7 @@ function Projects() {
 
             {/* article 2 */}
             <article className="">
-              <figure className="group relative lg:max-w-sm md:max-w-md sm:max-w-md transition-all duration-300 cursor-pointer">
+              <figure className="group relative lg:max-w-lg md:max-w-md sm:max-w-md transition-all duration-300 ">
                 <a href="#">
                   <img
                     className="rounded-lg"
@@ -407,12 +407,12 @@ function Projects() {
                     alt="image description"
                   />
                 </a>
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-600 to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
                 <figcaption className="absolute px-4 text-white bottom-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <h1 className="font-bold text-xl mb-2">
                     Absence Management design
                   </h1>
-                  <p className="text-gray-200 text-sm">
+                  <p className="text-white text-sm">
                     Crafted intuitive UX/UI for ISGI Institute{"'"}s absence
                     management, enhancing user experience and efficiency
                   </p>
