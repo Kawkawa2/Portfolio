@@ -1,11 +1,18 @@
+import React, { useState } from 'react';
 import "./style.css";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div>
       <nav className="">
-        <div className=" flex flex-wrap items-center justify-between md:mt-4 mb-28">
+        <div className="flex flex-wrap items-center justify-between md:mt-4 mb-28">
           <a href="/" className="flex items-center">
             <span className="self-center md:text-2xl text-xl font-semibold whitespace-nowrap">
               {"<Kawkawa/>"}
@@ -14,14 +21,14 @@ export default function Navbar() {
 
           <div className="flex md:hidden">
             <button
-              data-collapse-toggle="navbar-cta"
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm  rounded-lg md:hidden text-gray-500 hover:bg-gray-100  focus:outline-none"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden text-gray-500 hover:bg-gray-100 focus:outline-none"
               aria-controls="navbar-cta"
-              aria-expanded="false"
+              aria-expanded={isMenuOpen}
+              onClick={toggleMenu}
             >
               <span className="sr-only">Open main menu</span>
-              <span className="relative px-2 py-2 transition-all ease-in duration-75 group-hover:bg-white  rounded-md">
+              <span className="relative px-2 py-2 transition-all ease-in duration-75 group-hover:bg-white rounded-md">
                 <svg
                   className="w-5 h-5"
                   aria-hidden="true"
@@ -42,42 +49,44 @@ export default function Navbar() {
           </div>
 
           <div
-            className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${
+              isMenuOpen ? 'block' : 'hidden'
+            }`}
             id="navbar-cta"
           >
-            <ul className="flex flex-col font-medium  mt-4  md:flex-row md:space-x-8 md:mt-0  md:shadow-none shadow-xl  rounded-lg md:rounded-none bg-white overflow-hidden md:bg-transparent ">
+            <ul className="flex flex-col font-medium mt-4 md:flex-row md:space-x-8 md:mt-0 md:shadow-none shadow-xl rounded-lg md:rounded-none bg-white overflow-hidden md:bg-transparent">
               <li className="md:bg-transparent md:hover:bg-none hover:bg-gray-100">
                 <Link
                   to="/"
                   aria-label="Go to home Page"
-                  className="block py-2 pl-3 pr-4 text-blackrounded md:bg-transparent md  md:p-0  lg:hover:border-b-2 lg:hover:border-slate-900 md:border-b-0 border-b-2 border-opacity-5 border-b-black link"
+                  className="block py-2 pl-3 pr-4 text-black md:bg-transparent md:p-0 lg:hover:border-b-2 lg:hover:border-slate-900 md:border-b-0 border-b-2 border-opacity-5 border-b-black"
                 >
                   Home
                 </Link>
               </li>
-              <li className="md:bg-transparent  md:hover:bg-none  hover:bg-gray-100">
+              <li className="md:bg-transparent md:hover:bg-none hover:bg-gray-100">
                 <Link
                   to="/about"
                   aria-label="Go to about Page"
-                  className="block py-2 pl-3 pr-4 text-blackrounded md:bg-transparent md md:p-0 lg:hover:border-b-2 lg:hover:border-slate-900 md:border-b-0 border-b-2 border-opacity-5 border-b-black link"
+                  className="block py-2 pl-3 pr-4 text-black md:bg-transparent md:p-0 lg:hover:border-b-2 lg:hover:border-slate-900 md:border-b-0 border-b-2 border-opacity-5 border-b-black"
                 >
                   About
                 </Link>
               </li>
-              <li className="md:bg-transparent  md:hover:bg-none  hover:bg-gray-100">
+              <li className="md:bg-transparent md:hover:bg-none hover:bg-gray-100">
                 <Link
                   to="/projects"
                   aria-label="Go to Projects Page"
-                  className="block py-2 pl-3 pr-4 text-blackrounded md:bg-transparent md md:p-0 lg:hover:border-b-2 lg:hover:border-slate-900 md:border-b-0 border-b-2 border-opacity-5 border-b-black"
+                  className="block py-2 pl-3 pr-4 text-black md:bg-transparent md:p-0 lg:hover:border-b-2 lg:hover:border-slate-900 md:border-b-0 border-b-2 border-opacity-5 border-b-black"
                 >
                   Projects
                 </Link>
               </li>
-              <li className="md:bg-transparent md:hover:bg-none  hover:bg-gray-100">
+              <li className="md:bg-transparent md:hover:bg-none hover:bg-gray-100">
                 <Link
                   to="/contact"
-                  aria-label="Go to Contacy Page"
-                  className="block py-2 pl-3 pr-4 text-blackrounded md:bg-transparent md md:p-0 lg:hover:border-b-2 lg:hover:border-slate-900"
+                  aria-label="Go to Contact Page"
+                  className="block py-2 pl-3 pr-4 text-black md:bg-transparent md:p-0 lg:hover:border-b-2 lg:hover:border-slate-900"
                 >
                   Contact
                 </Link>
@@ -89,3 +98,4 @@ export default function Navbar() {
     </div>
   );
 }
+
