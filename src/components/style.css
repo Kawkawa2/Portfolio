@@ -60,10 +60,15 @@ ul.timeline {
       margin-top: 5px; /* Optional: Add spacing on small screens */
     }
 }
-*{
+
+
+
+/* Global cursor style */
+* {
   cursor: none;
 }
-/* adding css for cursor */
+
+/* Style for custom cursor */
 .cursor {
   width: 5rem;
   height: 5rem;
@@ -73,7 +78,6 @@ ul.timeline {
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: 1000;
-  /* transition: top 0.2s ease, left 0.1s ease; Smooth movement */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,6 +87,12 @@ ul.timeline {
   font-size: 1rem; /* Adjust size as needed */
 }
 
+/* Hide custom cursor on small screens */
+@media (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
+}
 
 
 
